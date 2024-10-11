@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <div class="container">
+    <div class="background-image"></div>
+    <div class="text-content">
+      <h1 class="hero-heading">I'm Iqra Ali</h1>
+      <p class="hero-paragraph"> A web Developer.</p>
+
+      <div class="buttons">
+        <button class="about-button" onclick="scrollToSection('about')">About</button>
+        <button class="graduation-button" onclick="scrollToSection('graduation')">Graduation</button>
+        <button class="project-button" onclick="scrollToSection('project')">Project</button>
+        <button class="contact-button" onclick="scrollToSection('contact')">Contact</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="section" id="about">
+    <h2>About me</h2>
+    <img class="about-img" src="photo.jpg" height="200" width="100">
+    <p>Meet Iqra Ali, a third-year BCA student with a passion for web development. 
+
+      Iqra is a curious and hard-working individual, always eager to take on new challenges and learn something new. She is particularly interested in front-end development and loves creating user-friendly and engaging websites and applications that provide a seamless user experience.</p>
+ 
+    </div>
+
+  <!-- Graduation Section -->
+  <div class="section" id="graduation">
+    <h1>Graduation</h1>
+    <p> As a third-year student pursuing a Bachelor of Computer Applications at UPRTOU University, I have gained a strong foundation in computer science and programming fundamentals and have begun to specialise in areas such as web development, software engineering, and data analytics</p>
+  </div>
+
+  <!-- Project Section -->
+<div class="section project-section" id="project">
+  <div class="project-content">
+      <h2>Project</h2>
+      <p>I have taken several online courses on platforms like Udemy to further develop my skills and knowledge in web development. I have also worked on my own projects, such as building a clone of the e-commerce website Myntra. These projects have given me the opportunity to apply what I've learned and showcase my abilities in web development</p>
+      <button onclick="window.open('https://iqraos.github.io/clonee-project/', '_blank')" class="project-button">View My Project</button>
+  </div>
+  <div class="project-images">
+      <img src="screenshot.png" alt="Project Image 1" class="project-image">
+      <img src="screenshot2.png" alt="Project Image 2" class="project-image">
+  </div>
+</div>
+
+ 
+     <!-- Contact Section -->
+<div class="section" id="contact">
+  <h2>Contact Me</h2>
+  <p>Feel free to reach out to me through email or connect with me on social media!</p>
+
+  <div class="contact-info">
+    <ul class="social-icons list-unstyled d-flex justify-content-center">
+      <!-- Email Icon with mailto: link -->
+      <li class="ms-3">
+        <a class="link-body-emphasis" href="mailto:iqraali2004point@gmail.com">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383L8.36 9.466a.5.5 0 0 1-.72 0L1 5.383V12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5.383z"/>
+          </svg>
+        </a>
+      </li>
+      <!-- Instagram Icon -->
+      <li class="ms-3">
+        <a class="link-body-emphasis" href="https://www.instagram.com/litttlemissrage/profilecard/?igsh=c3puNDJsNzlyd2Fj" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0c2.137 0 2.43.008 3.278.048.849.04 1.433.178 1.944.384a3.92 3.92 0 0 1 1.426.938 3.92 3.92 0 0 1 .938 1.426c.206.511.344 1.095.384 1.944C15.992 5.57 16 5.863 16 8s-.008 2.43-.048 3.278c-.04.849-.178 1.433-.384 1.944a3.92 3.92 0 0 1-.938 1.426 3.92 3.92 0 0 1-1.426.938c-.511.206-1.095.344-1.944.384C10.43 15.992 10.137 16 8 16s-2.43-.008-3.278-.048c-.849-.04-1.433-.178-1.944-.384a3.92 3.92 0 0 1-1.426-.938 3.92 3.92 0 0 1-.938-1.426c-.206-.511-.344-1.095-.384-1.944C.008 10.43 0 10.137 0 8s.008-2.43.048-3.278c.04-.849.178-1.433.384-1.944a3.92 3.92 0 0 1 .938-1.426 3.92 3.92 0 0 1 1.426-.938c.511-.206 1.095-.344 1.944-.384C5.57.008 5.863 0 8 0zm0 1.465c-2.075 0-2.32.008-3.137.046-.758.036-1.2.166-1.481.276-.374.145-.64.318-.918.596a2.47 2.47 0 0 0-.596.918c-.11.28-.24.723-.276 1.481-.038.816-.046 1.062-.046 3.137s.008 2.32.046 3.137c.036.758.166 1.2.276 1.481.145.374.318.64.596.918.278.278.544.45.918.596.28.11.723.24 1.481.276.816.038 1.062.046 3.137.046s2.32-.008 3.137-.046c.758-.036 1.2-.166 1.481-.276.374-.145.64-.318.918-.596.278-.278.45-.544.596-.918.11-.28.24-.723.276-1.481.038-.816.046-1.062.046-3.137s-.008-2.32-.046-3.137c-.036-.758-.166-1.2-.276-1.481a2.47 2.47 0 0 0-.596-.918 2.47 2.47 0 0 0-.918-.596c-.28-.11-.723-.24-1.481-.276-.816-.038-1.062-.046-3.137-.046zm0 2.276a4.26 4.26 0 1 1 0 8.521 4.26 4.26 0 0 1 0-8.521zm0 1.477a2.783 2.783 0 1 0 0 5.566 2.783 2.783 0 0 0 0-5.566zm5.348-.932a.8.8 0 1 1 0 1.6.8.8 0 0 1 0-1.6z"/>
+          </svg>
+        </a>
+      </li>
+      <!-- LinkedIn Icon -->
+      <li class="ms-3">
+        <a class="link-body-emphasis" href="https://www.linkedin.com/in/iqra-ali111" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65c.65 0 1.175.513 1.175 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175A1.164 1.164 0 0 1 0 14.854V1.146zm4.943 12.248V6.169H3.118v7.225h1.825zm-.912-8.21c.837 0 1.358-.554 1.358-1.248-.015-.71-.52-1.247-1.341-1.247C3.871 2.448 3.34 2.986 3.34 3.696c0 .694.52 1.248 1.29 1.248h.002zM13.9 12.523v-3.978c0-2.123-1.133-3.113-2.643-3.113-1.216 0-1.744.67-2.048 1.141v-1.01H7.385c.025.668 0 7.225 0 7.225h1.825v-4.035c0-.215.016-.43.079-.584.173-.43.569-.877 1.233-.877.87 0 1.217.662 1.217 1.633v3.863h1.825z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  </div>
+
+
+  <script>
+    function scrollToSection(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
